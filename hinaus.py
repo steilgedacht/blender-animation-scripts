@@ -2,7 +2,6 @@ import bpy
 import random
 name = bpy.context.active_object.name
 richtung = random.randint(1,4)
-#richtung = 1
 
 frame = bpy.data.scenes['Scene'].frame_current
 bpy.ops.anim.keyframe_insert_menu(type='Location')

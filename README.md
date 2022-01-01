@@ -10,3 +10,4 @@ Use a camera that faces downwards
 
 Every script has a 
 `duration = 60`
+which adjusts the duration of the animation.

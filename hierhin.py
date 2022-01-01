@@ -1,5 +1,8 @@
 import bpy
 
+#duration in [frames]
+duration = 60 
+
 name = bpy.context.active_object.name
 x1 = bpy.data.objects[name].location.x
 y1 = bpy.data.objects[name].location.y
@@ -27,7 +30,7 @@ x = bpy.data.objects[name].location.x
 y = bpy.data.objects[name].location.y
 z = bpy.data.objects[name].location.z
 
-bpy.context.scene.frame_set(frame - 60)
+bpy.context.scene.frame_set(frame - duration)
 bpy.data.objects[name].location = (x,y,z)
 bpy.ops.anim.keyframe_insert_menu(type='Location')
 

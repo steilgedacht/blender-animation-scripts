@@ -16,3 +16,4 @@ Use a camera that faces downwards
 Every script has a 
 `duration = 60`
 which adjusts the duration of the animation.
+The number refers to frames, so a duration of 60 will result in a 60 frames long animation, which will take 1 second if you are animating in 60fps.
